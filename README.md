@@ -1,15 +1,6 @@
 Job Search API
 This is a FastAPI-based application that aggregates job listings from multiple sources, including APIs (Upwork, Remote Jobs, Glassdoor, Freelancer, Indeed, LinkedIn) and web scraping (Rozee.pk, Naukri.com). It filters results using a Hugging Face sentiment analysis model to ensure relevance based on user-defined criteria.
 
-Project Structure
-
-job-search-api/
-├── main.py          # FastAPI app and endpoint definition
-├── model.py         # Pydantic model for job search criteria
-├── job_api.py       # API integration functions for job platforms
-├── job_scraping.py  # Web scraping functions for job sites
-├── utils.py         # Utility functions (e.g., job filtering with Hugging Face)
-
 Features
 API Integrations: Fetches jobs from Upwork, Remote Jobs, Glassdoor, Freelancer, Indeed, and LinkedIn using RapidAPI endpoints.
 Web Scraping: Scrapes job listings from Rozee.pk and Naukri.com using requests and BeautifulSoup.
